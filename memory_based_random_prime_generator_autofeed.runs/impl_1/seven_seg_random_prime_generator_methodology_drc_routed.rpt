@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Sat Nov 16 10:07:26 2024
+| Date         : Sat Nov 16 13:08:11 2024
 | Host         : LAPTOP-5L2L4Q7N running 64-bit major release  (build 9200)
 | Command      : report_methodology -file seven_seg_random_prime_generator_methodology_drc_routed.rpt -pb seven_seg_random_prime_generator_methodology_drc_routed.pb -rpx seven_seg_random_prime_generator_methodology_drc_routed.rpx
 | Design       : seven_seg_random_prime_generator
@@ -23,16 +23,56 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 41
-+-----------+----------+-------------------------------+------------+
-| Rule      | Severity | Description                   | Violations |
-+-----------+----------+-------------------------------+------------+
-| TIMING-18 | Warning  | Missing input or output delay | 8          |
-| TIMING-20 | Warning  | Non-clocked latch             | 33         |
-+-----------+----------+-------------------------------+------------+
+             Violations found: 23
++-----------+------------------+-------------------------------+------------+
+| Rule      | Severity         | Description                   | Violations |
++-----------+------------------+-------------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell   | 8          |
+| TIMING-18 | Warning          | Missing input or output delay | 15         |
++-----------+------------------+-------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin msb/prbs_init/out_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin msb/prbs_init/out_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin msb/prbs_init/out_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin msb/prbs_init/out_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin msb/prbs_init/out_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin msb/prbs_init/out_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin msb/prbs_init/out_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin msb/prbs_init/out_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
 TIMING-18#1 Warning
 Missing input or output delay  
 An output delay is missing on an[0] relative to clock(s) sys_clk_pin
@@ -73,169 +113,39 @@ Missing input or output delay
 An output delay is missing on an[7] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-20#1 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[0] cannot be properly analyzed as its control pin nolabel_line302/i_reg[0]/G is not reached by a timing clock
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on seg[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-20#2 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[10] cannot be properly analyzed as its control pin nolabel_line302/i_reg[10]/G is not reached by a timing clock
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on seg[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-20#3 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[11] cannot be properly analyzed as its control pin nolabel_line302/i_reg[11]/G is not reached by a timing clock
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on seg[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-20#4 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[12] cannot be properly analyzed as its control pin nolabel_line302/i_reg[12]/G is not reached by a timing clock
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on seg[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-20#5 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[13] cannot be properly analyzed as its control pin nolabel_line302/i_reg[13]/G is not reached by a timing clock
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on seg[4] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-20#6 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[14] cannot be properly analyzed as its control pin nolabel_line302/i_reg[14]/G is not reached by a timing clock
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on seg[5] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
-TIMING-20#7 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[15] cannot be properly analyzed as its control pin nolabel_line302/i_reg[15]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#8 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[16] cannot be properly analyzed as its control pin nolabel_line302/i_reg[16]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#9 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[17] cannot be properly analyzed as its control pin nolabel_line302/i_reg[17]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#10 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[18] cannot be properly analyzed as its control pin nolabel_line302/i_reg[18]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#11 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[19] cannot be properly analyzed as its control pin nolabel_line302/i_reg[19]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#12 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[1] cannot be properly analyzed as its control pin nolabel_line302/i_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#13 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[20] cannot be properly analyzed as its control pin nolabel_line302/i_reg[20]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#14 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[21] cannot be properly analyzed as its control pin nolabel_line302/i_reg[21]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#15 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[22] cannot be properly analyzed as its control pin nolabel_line302/i_reg[22]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#16 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[23] cannot be properly analyzed as its control pin nolabel_line302/i_reg[23]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#17 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[24] cannot be properly analyzed as its control pin nolabel_line302/i_reg[24]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#18 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[25] cannot be properly analyzed as its control pin nolabel_line302/i_reg[25]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#19 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[26] cannot be properly analyzed as its control pin nolabel_line302/i_reg[26]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#20 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[27] cannot be properly analyzed as its control pin nolabel_line302/i_reg[27]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#21 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[28] cannot be properly analyzed as its control pin nolabel_line302/i_reg[28]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#22 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[29] cannot be properly analyzed as its control pin nolabel_line302/i_reg[29]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#23 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[2] cannot be properly analyzed as its control pin nolabel_line302/i_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#24 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[30] cannot be properly analyzed as its control pin nolabel_line302/i_reg[30]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#25 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[31] cannot be properly analyzed as its control pin nolabel_line302/i_reg[31]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#26 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[3] cannot be properly analyzed as its control pin nolabel_line302/i_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#27 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[4] cannot be properly analyzed as its control pin nolabel_line302/i_reg[4]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#28 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[5] cannot be properly analyzed as its control pin nolabel_line302/i_reg[5]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#29 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[6] cannot be properly analyzed as its control pin nolabel_line302/i_reg[6]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#30 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[7] cannot be properly analyzed as its control pin nolabel_line302/i_reg[7]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#31 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[8] cannot be properly analyzed as its control pin nolabel_line302/i_reg[8]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#32 Warning
-Non-clocked latch  
-The latch nolabel_line302/i_reg[9] cannot be properly analyzed as its control pin nolabel_line302/i_reg[9]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#33 Warning
-Non-clocked latch  
-The latch nolabel_line302/memory_feeded_reg cannot be properly analyzed as its control pin nolabel_line302/memory_feeded_reg/G is not reached by a timing clock
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on seg[6] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 

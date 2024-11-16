@@ -114,7 +114,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 set_msg_config  -id {[BD 41-1271]}  -suppress 
 
@@ -126,6 +125,7 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 2
+  set_param xicom.use_bs_reader 1
   open_checkpoint seven_seg_random_prime_generator_routed.dcp
   set_property webtalk.parent_dir {C:/Users/SHUBHAM_KUMAR_JHA/Desktop/VLSI/VERILOG/vivado_2020 project/memory_based_random_prime_generator_autofeed/memory_based_random_prime_generator_autofeed.cache/wt} [current_project]
 set_property TOP seven_seg_random_prime_generator [current_fileset]

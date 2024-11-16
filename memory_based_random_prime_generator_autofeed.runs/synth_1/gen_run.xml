@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1731731710">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1731742548">
   <File Type="PA-TCL" Name="seven_seg_random_prime_generator.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="seven_seg_random_prime_generator_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="seven_seg_random_prime_generator_reports.tcl"/>
@@ -43,9 +43,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

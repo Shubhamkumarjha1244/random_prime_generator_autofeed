@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Sat Nov 16 10:06:50 2024
+| Date         : Sat Nov 16 13:07:33 2024
 | Host         : LAPTOP-5L2L4Q7N running 64-bit major release  (build 9200)
 | Command      : report_drc -file seven_seg_random_prime_generator_drc_opted.rpt -pb seven_seg_random_prime_generator_drc_opted.pb -rpx seven_seg_random_prime_generator_drc_opted.rpx
 | Design       : seven_seg_random_prime_generator
