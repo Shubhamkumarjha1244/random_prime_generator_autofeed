@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Nov 16 10:08:03 2024
+# Process ID: 18476
+# Current directory: C:/Users/SHUBHAM_KUMAR_JHA/Desktop/VLSI/VERILOG/vivado_2020 project/memory_based_random_prime_generator_autofeed/memory_based_random_prime_generator_autofeed.runs/impl_1
+# Command line: vivado.exe -log seven_seg_random_prime_generator.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source seven_seg_random_prime_generator.tcl -notrace
+# Log file: C:/Users/SHUBHAM_KUMAR_JHA/Desktop/VLSI/VERILOG/vivado_2020 project/memory_based_random_prime_generator_autofeed/memory_based_random_prime_generator_autofeed.runs/impl_1/seven_seg_random_prime_generator.vdi
+# Journal file: C:/Users/SHUBHAM_KUMAR_JHA/Desktop/VLSI/VERILOG/vivado_2020 project/memory_based_random_prime_generator_autofeed/memory_based_random_prime_generator_autofeed.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source seven_seg_random_prime_generator.tcl -notrace
